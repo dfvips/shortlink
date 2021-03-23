@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta name="renderer" content="webkit" charset="utf-8" />
+ <meta name="author" content="DreamFly" />
+ <meta name="keywords" content="shortlink, 短链接生成,2cn.dev,短链接,Dreamfly,梦丶随心飞,2cn,无广告" />
+ <meta name="description" content="短链接生成" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+ <title>2cn.dev-短链接生成,方便快捷</title>
+ <link rel="stylesheet" type="text/css" href="css/pc.css" id="pccss" />
+ <link rel="stylesheet" type="text/css" href="css/mobile.css" id="mobilecss" />
+ <link rel="shortcut icon" href="image/logo.ico" type="image/x-icon" />
+ <link rel='stylesheet' href='css/splitting.css'>
+ <link rel="stylesheet" href="css/style.css">
+ <script src='js/time.js'></script>
+ <script src='js/jquery.min.js'></script>
+</head>
+<body>
+<center style="margin-top:50px;">
+ <div id="logo">
+  <span id="mylogo">Dreamfly</span>
+  <h2 data-splitting class="headline headline--ghost">短链接生成</h2>
+ </div>
+ <div style="height:43px;" id="input_tag">
+  <input type="text" id="dfs" autocomplete="off" placeholder="&nbsp;请输入要生成短链的网址" />
+  <span class="btn_wr"><input type="submit" value="快速生成" class="btn"  /></span>
+ </div>
+</center>
+<div id="url_box">
+ <div class="url_btn" onclick="closeframe();"></div>
+ <div class="url_title" id="url_title">短网址</div>
+ <div><input type="text" id="url_input" readonly value="" placeholder="加载中..."></div>
+</div>
+<footer>
+ <p id="time">本站已稳定运行00天00小时00分钟00秒，如需协助请联系：admin@dfvips.com</p>
+ <p>Copyright &copy; 2018-2021 DreamFly. All Rights Reserved.</p>
+ <p>梦丶随心飞&copy;版权所有</p>
+</footer>
+<script src="js/index.js"></script>
+<script src='js/splitting.min.js'></script>
+<script src="js/script.js"></script>
+</body>
+</html>
