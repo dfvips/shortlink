@@ -1,4 +1,4 @@
-package com.dreamfly.shortlink.controller;
+package App.controller;
 
 
 import org.springframework.stereotype.Controller;

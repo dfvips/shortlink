@@ -1,1 +1,188 @@
-@charset "UTF-8";@font-face{font-family:'myfont';src:url('../fonts/pirulen.woff') format('woff')}*{padding:0;margin:0;border:none;outline:none}body{min-width:940px;-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;-khtml-user-select:none;user-select:none}span{font-family:arial,sans-serif;font-size:26px}footer{width:100%;text-align:center;position:absolute;bottom:20px;margin:0 auto;min-width:940px}footer>p{color:#a8a8a8;font-size:14px;line-height:24px}#bdlogo{vertical-align:middle;width:200px;margin-bottom:20px;padding:10px;overflow:hidden;fill:currentColor;z-index:-500}#dfs{width:489px;height:20px;padding:9px 7px;font:16px arial;border:1px solid #b8b8b8;border-radius:8px 0 0 8px;vertical-align:top;outline:0}.btn_wr{width:107px;height:42px;display:inline-block;position:relative}.btn{cursor:pointer;width:104px;height:40px;line-height:38px;padding:0;background:0 0;background-color:#38f;font-size:16px;color:#fff;box-shadow:none;font-weight:400;border:1px solid #38f;border-bottom:1px solid #2e7ae5;border-radius:0 8px 8px 0;margin-left:-16px}#mouse{width:30px}#url_box{background:#fff;display:none;border-radius:8px;box-shadow:0 0 15px rgba(0,0,0,0.2);padding:20px;min-width:270px;position:absolute;left:50%;top:44%;transform:translate(-50%,-50%)}.url_btn:hover{background-color:#DCDEE2;cursor:pointer!important}.url_btn{cursor:pointer;background:#fff url("../image/clone.png") 8px 8px no-repeat;font-size:0;border-radius:50%;width:30px;height:30px;line-height:30px;text-align:center;position:absolute;right:-15px;top:-15px;border:1px solid #ddd;border-bottom:0;border-left:0}.url_title{color:#3F3F3F;font-size:13px}#url_input{margin:15px 0;font-size:22px;width:290px;border:1px solid #CCCCCC;padding:5px;color:#AAAAAA;box-shadow:inset 0 1px 2px rgba(0,0,0,0.075);border-radius:3px}#mylogo{font-family:myfont!important;font-size:30px;display:inline-block;margin-top:70px;background:linear-gradient(-45deg,#ee7752,#7d72db,#23a6d5,#7ed3f2);background-size:300% 300%;animation:mybg 5s ease infinite;color:transparent;-webkit-background-clip:text;-webkit-text-fill-color:transparent}#logo:hover{cursor:pointer!important}#input_tag{margin-top:30px}.headline{align-items:center;margin-top:4px;display:flex;font-family:'Lexend Deca',sans-serif;font-weight:540;font-size:1.2rem;justify-content:center;color:rgba(10,10,10,.6);scroll-snap-align:start;@for $i from 1 through length($colors){&:nth-child(#{$i}){--color:#{nth($colors,$i)}}}}.word,.char{animation-delay:var(--del);animation-direction:var(--dir,normal);animation-duration:var(--dur);animation-iteration-count:infinite;animation-name:var(--name);animation-timing-function:var(--tf);display:inline-block;position:relative;transform-origin:50% 100%;z-index:1;font-size:1.2rem}@keyframes mybg{0%{background-position:20% 50%}50%{background-position:90% 50%}100%{background-position:20% 50%}}
+@charset "UTF-8";
+@font-face {
+    font-family: 'myfont';
+    src: url('../fonts/pirulen.woff') format('woff');
+}
+*{
+    padding: 0;
+    margin: 0;
+    border:none;
+    outline: none;
+}
+body {
+    min-width:940px;
+    -moz-user-select:none; /*火狐*/
+    -webkit-user-select:none; /*webkit浏览器*/
+    -ms-user-select:none; /*IE10*/
+    -khtml-user-select:none; /*早期浏览器*/
+    user-select:none;
+}
+span {
+    font-family:arial,sans-serif;
+    font-size:26px
+}
+footer {
+    width: 100%;
+    text-align:center;
+    position: absolute;
+    bottom: 20px;
+    margin: 0 auto;
+    min-width:940px;
+}
+footer>p{
+    color: #a8a8a8;
+    font-size: 14px;
+    line-height:24px;
+}
+#bdlogo {
+    vertical-align:middle;
+    width: 200px;
+    margin-bottom:20px;
+    padding:10px;
+    overflow: hidden;
+    fill: currentColor;
+    z-index: -500;
+}
+#dfs {
+    width:489px;
+    height:20px;
+    padding:9px 7px;
+    font:16px arial;
+    border:1px solid #b8b8b8;
+    border-radius:8px 0 0 8px;
+    vertical-align:top;
+    outline:0;
+}
+.btn_wr {
+    width:107px;
+    height:42px;
+    display:inline-block;
+    position:relative;
+}
+.btn {
+    cursor: pointer;
+    width: 104px;
+    height: 40px;
+    line-height: 38px;
+    padding: 0;
+    background: 0 0;
+    background-color: #38f;
+    font-size: 16px;
+    color: #fff;
+    box-shadow: none;
+    font-weight: 400;
+    border: 1px solid #38f;
+    border-bottom: 1px solid #2e7ae5;
+    border-radius:0 8px 8px 0;
+    margin-left: -16px;
+}
+#mouse{
+    width: 30px;
+}
+#url_box {
+    background: #fff;
+    display: none;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    /*position: fixed; */
+    min-width: 270px;
+    position: absolute; left: 50%; top: 44%;
+    transform: translate(-50%, -50%);
+}
+.url_btn:hover{
+    background-color: #DCDEE2;
+    cursor: pointer!important;
+}
+.url_btn {
+    cursor: pointer;
+    background: #fff url("../image/clone.png") 8px 8px no-repeat;
+    font-size: 0;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    position: absolute;
+    right: -15px;
+    top: -15px;
+    border: 1px solid #ddd;
+    border-bottom: 0;
+    border-left: 0;
+}
+.url_title{
+    color: #3F3F3F;
+    font-size: 13px;
+}
+#url_input {
+    margin: 15px 0;
+    font-size: 22px;
+    width: 290px;
+    border: 1px solid #CCCCCC;
+    padding: 5px;
+    color:#AAAAAA;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075);
+    border-radius: 3px;
+}
+#mylogo {
+    font-family: myfont!important;
+    font-size: 30px;
+    display: inline-block;
+    margin-top: 70px;
+    background: linear-gradient(-45deg, #ee7752, #7d72db, #23a6d5, #7ed3f2);
+    background-size: 300% 300%;
+    animation: mybg 5s ease infinite;
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#logo :hover{
+    cursor: pointer!important;
+}
+#input_tag{
+    margin-top: 30px;
+}
+.headline {
+    align-items: center;
+    margin-top: 4px;
+    display: flex;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 540;
+    font-size: 1.2rem;
+    justify-content: center;
+    color: rgba(10,10,10,.6);
+    /*  overflow: hidden;*/
+    scroll-snap-align: start;
+
+@for $i from 1 through length($colors) {
+&:nth-child(#{$i}) {
+    --color: #{nth($colors, $i)};
+}
+}
+}
+
+.word,
+.char {
+    animation-delay: var(--del);
+    animation-direction: var(--dir, normal);
+    animation-duration: var(--dur);
+    animation-iteration-count: infinite;
+    animation-name: var(--name);
+    animation-timing-function: var(--tf);
+    display: inline-block;
+    position: relative;
+    transform-origin: 50% 100%;
+    z-index: 1;
+    font-size: 1.2rem;
+}
+
+@keyframes mybg{
+    0% {
+        background-position: 20% 50%;
+    }
+    50% {
+        background-position: 90% 50%;
+    }100% {
+         background-position: 20% 50%;
+     }
+}

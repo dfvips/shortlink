@@ -1,3 +1,11 @@
-
+spring:
+    thymeleaf:
+        prefix: classpath:/templates/
+        servlet:
+            content-type: text/html
+        suffix: .html
+        cache: true
+        mode: HTML
+        encoding: UTF-8
 server:
-    port: 80
+    port: 8081

@@ -1,4 +1,4 @@
-package com.dreamfly.shortlink.mybaties;
+package App.mybaties;
 
 import java.io.Reader;
 

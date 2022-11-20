@@ -1,11 +1,11 @@
-package com.dreamfly.shortlink.services;
+package App.services;
 
 import java.util.List;
 
 import org.apache.ibatis.session.SqlSession;
-import com.dreamfly.shortlink.entity.db;
-import com.dreamfly.shortlink.mybaties.Mapper;
-import com.dreamfly.shortlink.mybaties.MybatisReader;
+import App.entity.db;
+import App.mybaties.Mapper;
+import App.mybaties.MybatisReader;
 
 public class service {
 	public static List<db> search(String u_id) {

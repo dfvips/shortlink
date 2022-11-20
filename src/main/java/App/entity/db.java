@@ -1,4 +1,4 @@
-package com.dreamfly.shortlink.entity;
+package App.entity;
 
 public class db {
 

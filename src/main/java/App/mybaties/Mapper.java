@@ -1,7 +1,8 @@
-package com.dreamfly.shortlink.mybaties;
+package App.mybaties;
 
 import java.util.List;
-import com.dreamfly.shortlink.entity.db;
+
+import App.entity.db;
 
 public interface Mapper {
     public List<db> search(String u_id);
